@@ -13,7 +13,7 @@ namespace :dev do
       Contact.create!(
         name: Faker::Name.name,
         email: Faker::Internet.email,
-        birthdate: Date.new,
+        birthdate: Date.today,
         kind: Kind.all.sample
       )
     end
