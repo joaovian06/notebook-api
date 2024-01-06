@@ -1,7 +1,9 @@
 class Contact < ApplicationRecord
     # Associations
-    belongs_to :kind, optional: true
+    belongs_to :kind
     has_many :phones
+
+    accepts_nested_attributes_for :phones
 
     def as_json(options={})
         h = super(options)
