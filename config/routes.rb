@@ -4,11 +4,11 @@ Rails.application.routes.draw do
     resource :kind, only: [:show]
     resource :kind, only: [:show], path: "relationships/kind"
 
-    resource :phones
-    resource :phones, path: "relationships/phones"
+    resource :phones, only: [:show, :update]
+    resource :phones, only: [:show, :update], path: "relationships/phones"
 
-    resource :address
-    resource :address, path: "relationships/address"
+    resource :address, only: [:show, :update, :create, :destroy]
+    resource :address, only: [:show, :update, :create, :destroy], path: "relationships/address"
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
