@@ -17,6 +17,7 @@ gem "foreman"
 gem "jwt"
 gem "devise"
 gem "devise_token_auth"
+gem "devise-i18n"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
