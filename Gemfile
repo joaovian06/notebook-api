@@ -15,6 +15,8 @@ gem "puma", "~> 5.0"
 gem "foreman"
 
 gem "jwt"
+gem "devise"
+gem "devise_token_auth"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
