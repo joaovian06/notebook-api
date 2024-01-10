@@ -6,7 +6,7 @@ module V1
     def index
       @contacts = Contact.all
 
-      render json: @contacts #, methods: :birthdate_br#, methods: [:hello, :i18n]
+      render json: @contacts#, methods: :birthdate_br#, methods: [:hello, :i18n]
     end
 
     # GET /contacts/1

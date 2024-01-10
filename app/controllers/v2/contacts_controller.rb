@@ -4,9 +4,9 @@ module V2
 
     # GET /contacts
     def index
-      # @contacts = Contact.all
+      @contacts = Contact.all
 
-      render json: { type: "v2" } #@contacts #, methods: :birthdate_br#, methods: [:hello, :i18n]
+      render json: @contacts #, methods: :birthdate_br#, methods: [:hello, :i18n]
     end
 
     # GET /contacts/1
